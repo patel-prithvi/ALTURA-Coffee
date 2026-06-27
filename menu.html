@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | ALTURA Coffee</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+
+                <svg viewBox="0 0 26 26" fill="none">
+                    <path d="M13 2 L22 9 L19 18 L7 18 L4 9 Z"
+                        stroke="currentColor"
+                        stroke-width="1.4"></path>
+
+                    <path d="M13 6 L18 10 L16.3 16 L9.7 16 L8 10 Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        opacity=".6"></path>
+                </svg>
+
+                <span>ALTURA</span>
+
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Coffee</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-right">
+
+                <a href="login.html" class="login-btn">
+
+                    Login
+
+                </a>
+
+                <a href="signup.html" class="signup-btn">
+
+                    Sign Up
+
+                </a>
+
+                <a href="cart.html" class="cart-btn">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <span id="cart-count">0</span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="menu-hero">
+
+        <div class="container">
+
+            <span>
+
+                ALTURA MENU
+
+            </span>
+
+            <h1>
+
+                Discover Every Cup
+
+            </h1>
+
+            <p>
+
+                Browse our handcrafted coffees,
+                seasonal specials and signature recipes.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="menu-search">
+
+        <div class="container">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search coffee...">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="menu-categories">
+
+        <div class="container">
+
+            <div class="category-wrapper">
+
+                <button class="category-btn active">
+
+                    All
+
+                </button>
+
+                <button class="category-btn">
+
+                    Espresso
+
+                </button>
+
+                <button class="category-btn">
+
+                    Latte
+
+                </button>
+
+                <button class="category-btn">
+
+                    Cappuccino
+
+                </button>
+
+                <button class="category-btn">
+
+                    Cold Coffee
+
+                </button>
+
+                <button class="category-btn">
+
+                    Signature
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="coffee-section">
+
+        <div class="container">
+
+            <div class="coffee-grid">
+                <!-- ================= PRODUCT 1 ================= -->
+
+<article class="coffee-card" data-category="espresso">
+
+    <div class="coffee-image">
+
+        <img src="assets/images/espresso.png"
+             alt="ALTURA Espresso">
+
+        <span class="badge">
+            Bestseller
+        </span>
+
+        <button class="wishlist">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+    </div>
+
+    <div class="coffee-content">
+
+        <div class="coffee-rating">
+
+            ★★★★★ <span>(264)</span>
+
+        </div>
+
+        <h3>ALTURA Espresso</h3>
+
+        <p>
+
+            Bold and rich espresso with
+            dark chocolate notes.
+
+        </p>
+
+        <div class="coffee-bottom">
+
+            <div>
+
+                <h4>₹170</h4>
+
+                <small>Single Shot</small>
+
+            </div>
+
+            <button class="add-cart">
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- ================= PRODUCT 2 ================= -->
+
+<article class="coffee-card" data-category="latte">
+
+    <div class="coffee-image">
+
+        <img src="assets/images/latte.png"
+             alt="Classic Latte">
+
+        <button class="wishlist">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+    </div>
+
+    <div class="coffee-content">
+
+        <div class="coffee-rating">
+
+            ★★★★★ <span>(412)</span>
+
+        </div>
+
+        <h3>Classic Latte</h3>
+
+        <p>
+
+            Velvety steamed milk blended
+            with signature espresso.
+
+        </p>
+
+        <div class="coffee-bottom">
+
+            <div>
+
+                <h4>₹240</h4>
+
+                <small>Medium</small>
+
+            </div>
+
+            <button class="add-cart">
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- ================= PRODUCT 3 ================= -->
+
+<article class="coffee-card" data-category="cappuccino">
+
+    <div class="coffee-image">
+
+        <img src="assets/images/cappuccino.png"
+             alt="Cappuccino">
+
+        <button class="wishlist">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+    </div>
+
+    <div class="coffee-content">
+
+        <div class="coffee-rating">
+
+            ★★★★★ <span>(185)</span>
+
+        </div>
+
+        <h3>Cappuccino</h3>
+
+        <p>
+
+            Smooth espresso with
+            creamy milk foam.
+
+        </p>
+
+        <div class="coffee-bottom">
+
+            <div>
+
+                <h4>₹220</h4>
+
+                <small>Medium</small>
+
+            </div>
+
+            <button class="add-cart">
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- ================= PRODUCT 4 ================= -->
+
+<article class="coffee-card" data-category="latte">
+
+    <div class="coffee-image">
+
+        <img src="assets/images/mocha.png"
+             alt="Mocha">
+
+        <span class="badge new">
+
+            New
+
+        </span>
+
+        <button class="wishlist">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+    </div>
+
+    <div class="coffee-content">
+
+        <div class="coffee-rating">
+
+            ★★★★★ <span>(143)</span>
+
+        </div>
+
+        <h3>Mocha</h3>
+
+        <p>
+
+            Premium espresso with
+            dark chocolate.
+
+        </p>
+
+        <div class="coffee-bottom">
+
+            <div>
+
+                <h4>₹260</h4>
+
+                <small>Medium</small>
+
+            </div>
+
+            <button class="add-cart">
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- ================= PRODUCT 5 ================= -->
+
+<article class="coffee-card" data-category="cold coffee">
+
+    <div class="coffee-image">
+
+        <img src="assets/images/coldbrew.png"
+             alt="Cold Brew">
+
+        <button class="wishlist">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+    </div>
+
+    <div class="coffee-content">
+
+        <div class="coffee-rating">
+
+            ★★★★★ <span>(201)</span>
+
+        </div>
+
+        <h3>Cold Brew</h3>
+
+        <p>
+
+            Slow brewed for 18 hours
+            and served chilled.
+
+        </p>
+
+        <div class="coffee-bottom">
+
+            <div>
+
+                <h4>₹250</h4>
+
+                <small>Large</small>
+
+            </div>
+
+            <button class="add-cart">
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- ================= PRODUCT 6 ================= -->
+
+<article class="coffee-card" data-category="latte">
+
+    <div class="coffee-image">
+
+        <img src="assets/images/macchiato.png"
+             alt="Caramel Macchiato">
+
+        <button class="wishlist">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+    </div>
+
+    <div class="coffee-content">
+
+        <div class="coffee-rating">
+
+            ★★★★★ <span>(126)</span>
+
+        </div>
+
+        <h3>Caramel Macchiato</h3>
+
+        <p>
+
+            Espresso layered with
+            steamed milk and caramel.
+
+        </p>
+
+        <div class="coffee-bottom">
+
+            <div>
+
+                <h4>₹280</h4>
+
+                <small>Medium</small>
+
+            </div>
+
+            <button class="add-cart">
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- ================= PRODUCT 7 ================= -->
+
+<article class="coffee-card" data-category="latte">
+
+    <div class="coffee-image">
+
+        <img src="assets/images/flatwhite.png"
+             alt="Flat White">
+
+        <button class="wishlist">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+    </div>
+
+    <div class="coffee-content">
+
+        <div class="coffee-rating">
+
+            ★★★★★ <span>(174)</span>
+
+        </div>
+
+        <h3>Flat White</h3>
+
+        <p>
+
+            Smooth microfoam with
+            double-shot espresso.
+
+        </p>
+
+        <div class="coffee-bottom">
+
+            <div>
+
+                <h4>₹230</h4>
+
+                <small>Medium</small>
+
+            </div>
+
+            <button class="add-cart">
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- ================= PRODUCT 8 ================= -->
+
+<article class="coffee-card" data-category="signature">
+
+    <div class="coffee-image">
+
+        <img src="assets/images/affogato.png"
+             alt="Affogato">
+
+        <span class="badge">
+
+            Premium
+
+        </span>
+
+        <button class="wishlist">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+    </div>
+
+    <div class="coffee-content">
+
+        <div class="coffee-rating">
+
+            ★★★★★ <span>(98)</span>
+
+        </div>
+
+        <h3>Affogato</h3>
+
+        <p>
+
+            Vanilla gelato finished
+            with freshly brewed espresso.
+
+        </p>
+
+        <div class="coffee-bottom">
+
+            <div>
+
+                <h4>₹320</h4>
+
+                <small>Dessert Coffee</small>
+
+            </div>
+
+            <button class="add-cart">
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SIGNATURE MENU ================= -->
+
+<section class="popular-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>
+                ALTURA SPECIALS
+            </span>
+
+            <h2>
+                Signature Recipes
+            </h2>
+
+        </div>
+
+        <div class="popular-grid">
+
+            <article class="popular-card">
+
+                <img src="assets/images/ahmedabad-spice-latte.png"
+                     alt="Ahmedabad Spice Latte">
+
+                <div>
+
+                    <h3>Ahmedabad Spice Latte</h3>
+
+                    <p>
+
+                        Espresso, saffron,
+                        cardamom and local honey.
+
+                    </p>
+
+                </div>
+
+                <span>₹320</span>
+
+            </article>
+
+            <article class="popular-card">
+
+                <img src="assets/images/rose-pistachio-latte.png"
+                     alt="Rose Pistachio Latte">
+
+                <div>
+
+                    <h3>Rose Pistachio Latte</h3>
+
+                    <p>
+
+                        Rose petals,
+                        pistachio and silky milk.
+
+                    </p>
+
+                </div>
+
+                <span>₹340</span>
+
+            </article>
+
+            <article class="popular-card">
+
+                <img src="assets/images/orange-cinnamon-espresso.png"
+                     alt="Orange Cinnamon Espresso">
+
+                <div>
+
+                    <h3>Orange Cinnamon Espresso</h3>
+
+                    <p>
+
+                        Orange citrus,
+                        cinnamon and espresso.
+
+                    </p>
+
+                </div>
+
+                <span>₹310</span>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <span>
+
+                JOIN ALTURA CLUB
+
+            </span>
+
+            <h2>
+
+                Exclusive Offers &
+                New Coffee Recipes
+
+            </h2>
+
+            <p>
+
+                Subscribe to receive special discounts,
+                seasonal drinks and member-only rewards.
+
+            </p>
+
+            <form>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email">
+
+                <button type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="index.html"
+               class="logo footer-logo">
+
+                <svg viewBox="0 0 26 26" fill="none">
+                    <path d="M13 2 L22 9 L19 18 L7 18 L4 9 Z"
+                        stroke="currentColor"
+                        stroke-width="1.4"/>
+
+                    <path d="M13 6 L18 10 L16.3 16 L9.7 16 L8 10 Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        opacity=".6"/>
+                </svg>
+
+                <span>ALTURA</span>
+
+            </a>
+
+            <p>
+
+                Crafted Higher.
+
+                Premium coffee inspired by Ahmedabad
+                and handcrafted for modern coffee lovers.
+
+            </p>
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Menu
+
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#">Espresso</a>
+                </li>
+
+                <li>
+                    <a href="#">Latte</a>
+                </li>
+
+                <li>
+                    <a href="#">Cappuccino</a>
+                </li>
+
+                <li>
+                    <a href="#">Cold Brew</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Company
+
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Visit Us
+
+            </h3>
+
+            <p>
+
+                Ahmedabad,
+                Gujarat,
+                India
+
+            </p>
+
+            <p>
+
+                Open Daily
+
+                8:00 AM – 11:00 PM
+
+            </p>
+
+            <p>
+
+                hello@altura.coffee
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        <p>
+
+            © 2026 ALTURA Coffee.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= JS ================= -->
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
