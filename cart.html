@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bag | ALTURA Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 26 26" fill="none"><path d="M13 2 L22 9 L19 18 L7 18 L4 9 Z" stroke="currentColor" stroke-width="1.4"></path></svg>
+                <span>ALTURA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-btn"><i class="fa-solid fa-bag-shopping"></i><span id="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="cart-page-wrapper">
+            <div class="cart-items-section">
+                <h1 class="mb-4">Shopping Bag</h1>
+                <div id="cart-items-container">
+                    <!-- Dynamic Cart Items -->
+                </div>
+            </div>
+            <div class="cart-summary-section">
+                <div class="cart-summary-card">
+                    <h3>Summary</h3>
+                    <div class="summary-line mt-3"><span>Subtotal</span><span id="cart-total-amount">₹0</span></div>
+                    <div class="summary-line"><span>Delivery</span><span>Free</span></div>
+                    <div class="summary-line summary-total"><span>Total</span><span id="cart-total-final">₹0</span></div>
+                    <button id="checkout-proceed-btn" class="primary-btn mt-3" style="width: 100%;">
+                        Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
