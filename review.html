@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews | ALTURA Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        .review-hero { padding: 160px 0 60px; text-align: center; background: var(--cream); }
+        .rating-summary {
+            display: grid; grid-template-columns: 1fr 2fr; gap: 40px;
+            background: white; padding: 40px; border-radius: var(--radius-lg);
+            box-shadow: var(--shadow); margin-bottom: 60px; align-items: center;
+        }
+        .avg-box { text-align: center; border-right: 1px solid var(--border); }
+        .avg-box h1 { font-size: 4rem; color: var(--primary); margin-bottom: 10px; }
+        .bar-container { display: flex; align-items: center; gap: 15px; margin-bottom: 8px; font-size: 0.9rem; }
+        .bar-bg { flex: 1; height: 8px; background: #eee; border-radius: 10px; overflow: hidden; }
+        .bar-fill { height: 100%; background: var(--secondary); border-radius: 10px; }
+        .write-review-section {
+            background: white; padding: 40px; border-radius: var(--radius-lg);
+            box-shadow: var(--shadow); position: sticky; top: 120px;
+        }
+        .star-picker { display: flex; gap: 10px; margin: 15px 0; font-size: 1.5rem; color: #ddd; cursor: pointer; }
+        .star-picker i.active { color: #F5B301; }
+        .review-feed { display: flex; flex-direction: column; gap: 25px; }
+
+        @media (max-width: 900px) {
+            .rating-summary { grid-template-columns: 1fr; }
+            .avg-box { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 26 26" fill="none"><path d="M13 2 L22 9 L19 18 L7 18 L4 9 Z" stroke="currentColor" stroke-width="1.4"></path></svg>
+                <span>ALTURA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="review.html" class="active">Reviews</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+                <a href="cart.html" class="cart-btn"><i class="fa-solid fa-bag-shopping"></i><span id="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="review-hero">
+        <div class="container">
+            <span class="hero-tag">Verified Experiences</span>
+            <h1>Customer Stories</h1>
+            <p>Join thousands of coffee lovers who have elevated their daily ritual with ALTURA.</p>
+        </div>
+    </section>
+
+    <main class="container mb-5">
+        <div class="rating-summary">
+            <div class="avg-box">
+                <h1>4.9</h1>
+                <div class="stars" style="color: #F5B301; font-size: 1.2rem;">★★★★★</div>
+                <p class="mt-2">Based on 12,402 reviews</p>
+            </div>
+            <div class="rating-bars">
+                <div class="bar-container"><span>5 Stars</span> <div class="bar-bg"><div class="bar-fill" style="width: 92%"></div></div> <span>92%</span></div>
+                <div class="bar-container"><span>4 Stars</span> <div class="bar-bg"><div class="bar-fill" style="width: 6%"></div></div> <span>6%</span></div>
+                <div class="bar-container"><span>3 Stars</span> <div class="bar-bg"><div class="bar-fill" style="width: 1%"></div></div> <span>1%</span></div>
+            </div>
+        </div>
+
+        <div class="cart-page-wrapper" style="padding-top: 0;">
+            <!-- Left: Reviews List -->
+            <div class="review-feed" id="review-list">
+                
+                <!-- USER SUBMITTED REVIEWS WILL LOAD HERE VIA JS -->
+
+                <!-- 1. Rahul Shah -->
+                <article class="review-card">
+                    <div class="review-top">
+                        <img src="assets/images/user1.png" alt="Customer">
+                        <div><h4>Rahul Shah</h4><span>Ahmedabad</span></div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>The Ahmedabad Spice Latte is absolutely amazing. Premium taste, beautiful packaging and very quick delivery.</p>
+                </article>
+
+                <!-- 2. Priya Patel -->
+                <article class="review-card">
+                    <div class="review-top">
+                        <img src="assets/images/user2.png" alt="Customer">
+                        <div><h4>Priya Patel</h4><span>University Student</span></div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>Finally a coffee brand that feels premium. The café aesthetic and coffee quality are incredible.</p>
+                </article>
+
+                <!-- 3. Meet Desai -->
+                <article class="review-card">
+                    <div class="review-top">
+                        <img src="assets/images/user3.png" alt="Customer">
+                        <div><h4>Meet Desai</h4><span>Software Engineer</span></div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>Espresso is rich and balanced. Delivery was surprisingly fast and the packaging looked premium.</p>
+                </article>
+
+                <!-- 4. Riya Mehta -->
+                <article class="review-card">
+                    <div class="review-top">
+                        <img src="assets/images/user4.png" alt="Customer">
+                        <div><h4>Riya Mehta</h4><span>Designer</span></div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>Beautiful branding and amazing coffee. Every cup looks Instagram worthy.</p>
+                </article>
+
+                <!-- 5. Harsh Trivedi -->
+                <article class="review-card">
+                    <div class="review-top">
+                        <img src="assets/images/user5.png" alt="Customer">
+                        <div><h4>Harsh Trivedi</h4><span>Entrepreneur</span></div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>I work from cafés almost every day. ALTURA has become my first choice.</p>
+                </article>
+
+                <!-- 6. Nisha Joshi -->
+                <article class="review-card">
+                    <div class="review-top">
+                        <img src="assets/images/user6.png" alt="Customer">
+                        <div><h4>Nisha Joshi</h4><span>Food Blogger</span></div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>The Rose Pistachio Latte is unlike anything I've tried before. Highly recommended.</p>
+                </article>
+
+            </div>
+
+            <!-- Right: Submit Form -->
+            <aside>
+                <div class="write-review-section">
+                    <h3>Share Your Experience</h3>
+                    <p id="auth-check-msg" style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 15px;"></p>
+                    
+                    <form id="reviewForm">
+                        <div class="star-picker" id="starPicker">
+                            <i class="fa-solid fa-star" data-value="1"></i>
+                            <i class="fa-solid fa-star" data-value="2"></i>
+                            <i class="fa-solid fa-star" data-value="3"></i>
+                            <i class="fa-solid fa-star" data-value="4"></i>
+                            <i class="fa-solid fa-star" data-value="5"></i>
+                        </div>
+                        <input type="hidden" id="ratingValue" value="0">
+                        <div class="form-group">
+                            <label>Review Details</label>
+                            <textarea id="reviewText" rows="4" placeholder="How was your coffee?" required style="width: 100%; border: 1px solid var(--border); border-radius: 12px; padding: 15px; font-family: inherit;"></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn" style="width: 100%;">Submit Review</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="container copyright"><p>© 2026 ALTURA Coffee. Crafted Higher.</p></div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Rating Interaction
+        const stars = document.querySelectorAll('#starPicker i');
+        const ratingInput = document.getElementById('ratingValue');
+        stars.forEach(s => {
+            s.onclick = () => {
+                const val = s.getAttribute('data-value');
+                ratingInput.value = val;
+                stars.forEach(st => st.classList.toggle('active', st.getAttribute('data-value') <= val));
+            };
+        });
+
+        // Load Community Reviews
+        const session = AuthEngine.getSession();
+        const list = document.getElementById('review-list');
+        const saved = JSON.parse(localStorage.getItem('altura_user_reviews')) || [];
+        
+        // Helper to add review to the TOP of the list
+        function prependReview(rev) {
+            const article = document.createElement('article');
+            article.className = 'review-card fade-up';
+            article.style.borderLeft = "4px solid var(--secondary)"; // Highlight community reviews
+            article.innerHTML = `
+                <div class="review-top">
+                    <img src="https://ui-avatars.com/api/?name=${encodeURIComponent(rev.name)}&background=5B3A29&color=fff" alt="User">
+                    <div><h4>${rev.name}</h4><span>Community Member</span></div>
+                </div>
+                <div class="stars" style="color: #F5B301;">${'★'.repeat(rev.rating)}${'☆'.repeat(5-rev.rating)}</div>
+                <p>${rev.text}</p>
+            `;
+            list.prepend(article);
+        }
+
+        saved.forEach(r => prependReview(r));
+
+        // Auth Gate
+        if(!session) {
+            document.getElementById('auth-check-msg').innerHTML = '<a href="login.html" style="color:var(--secondary); font-weight:700;">Login</a> to post a review.';
+            document.getElementById('reviewForm').style.opacity = "0.4";
+            document.getElementById('reviewForm').style.pointerEvents = "none";
+        } else {
+            document.getElementById('auth-check-msg').textContent = `Logged in as ${session.name}`;
+        }
+
+        // Handle Submit
+        document.getElementById('reviewForm').onsubmit = (e) => {
+            e.preventDefault();
+            if(ratingInput.value == 0) return alert('Select stars!');
+            
+            const newRev = { name: session.name, rating: ratingInput.value, text: document.getElementById('reviewText').value };
+            saved.push(newRev);
+            localStorage.setItem('altura_user_reviews', JSON.stringify(saved));
+            prependReview(newRev);
+            document.getElementById('reviewForm').reset();
+            stars.forEach(st => st.classList.remove('active'));
+            alert('Review posted!');
+        };
+    </script>
+</body>
+</html>
