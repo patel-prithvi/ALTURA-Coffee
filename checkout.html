@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | ALTURA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (localStorage.getItem('altura_logged_in') !== 'true') {
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="auth-container" style="max-width: 800px;">
+        <h2>Complete Your Order</h2>
+        <form id="checkout-form" onsubmit="handleOrder(event)">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group"><label>First Name</label><input type="text" required></div>
+                <div class="form-group"><label>Last Name</label><input type="text" required></div>
+            </div>
+            <div class="form-group"><label>Email Address</label><input type="email" required></div>
+            <div class="form-group"><label>Delivery Address</label><textarea rows="3" required></textarea></div>
+            <div class="form-group"><label>Payment Method</label>
+                <select style="width:100%; padding: 15px; border-radius: 12px; border:1px solid #ddd;">
+                    <option>Cash on Delivery</option>
+                    <option>UPI / Online</option>
+                </select>
+            </div>
+            <button type="submit" class="primary-btn mt-4" style="width:100%">Place Order</button>
+        </form>
+    </div>
+    <script>
+        function handleOrder(e) {
+            e.preventDefault();
+            localStorage.removeItem('altura_cart');
+            alert('Order Placed Successfully! Your coffee is being prepared.');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
